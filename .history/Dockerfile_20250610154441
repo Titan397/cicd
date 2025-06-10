@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+COPY .env ./
+
 EXPOSE 4040
 
 CMD ["npm", "start"]

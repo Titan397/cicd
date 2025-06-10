@@ -37,7 +37,7 @@ pipeline {
                     sh "docker stop ${CONTAINER_NAME} || true"
                     sh "docker rm ${CONTAINER_NAME} || true"
                     docker.image("${IMAGE_NAME}:${env.BUILD_NUMBER}").run(
-                        "-d --name ${CONTAINER_NAME} -p 3001:4040"
+                        "-d --name ${CONTAINER_NAME} -p 3001:3000"
                     )
                 }
             }

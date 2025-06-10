@@ -2,5 +2,5 @@ services:
   web:
     build: .
     ports:
-      - "3001:4040"
+      - "3001:3030"
     restart: always
